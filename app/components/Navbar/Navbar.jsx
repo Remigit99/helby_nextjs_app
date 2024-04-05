@@ -1,21 +1,30 @@
-
+"use client"
 
 import Link from "next/link"
 import Image from "next/image"
+import pathname from "next/navigation"
 import NavLogo from "../../assets/Logo_nav.svg"
 import Cart from "../../assets/cart_nav.svg"
 import Avatar from "../../assets/user_nav.svg"
 import style from "./navbar.module.css"
 
+import { RiMenu4Line } from "react-icons/ri";
+import { IoMdClose } from "react-icons/io";
+
+import { useState, useEffect } from "react"
+
 const navMenuLinks = [
     { id: 1, path: "/features", caption: "Features" },
-    { id: 1, path: "/pricing", caption: "Pricing" },
-    { id: 1, path: "/About-us", caption: "About Us" },
-    { id: 1, path: "/blog", caption: "Blog" },
-    { id: 1, path: "/contact", caption: "Contact" },
+    { id: 2, path: "/pricing", caption: "Pricing" },
+    { id: 3, path: "/About-us", caption: "About Us" },
+    { id: 4, path: "/blog", caption: "Blog" },
+    { id: 5, path: "/contact", caption: "Contact" },
 ]
 
 const Navbar = () => {
+
+    const [navbarOpen, setNavbarOpen] = useState(false)
+
     return (
         <nav className={style.nav}>
             <div className={`container ${style.navContainer}`}>
@@ -23,7 +32,8 @@ const Navbar = () => {
                     <Link href="/">
                         <Image src={NavLogo} alt="Helby_Logo" />
                     </Link>
-                    <ul className={style.menuItems}>
+
+                    {navbarOpen && <ul className={style.menuItems}>
                         {
                             navMenuLinks.map(({ id, path, caption }) =>
                                 <li key={id} >
@@ -31,18 +41,24 @@ const Navbar = () => {
                                 </li>)
                         }
                     </ul>
+                    }
                 </div>
 
                 <div className={style.navContainerRight}>
-                    <Link href="/">Book a demo</Link>
+                    <Link href="/" className={style.demo}>Book a demo</Link>
                     <Link href="/" >
-                        <Image src={Cart} alt="cartIcon" />
+                        <Image src={Cart} alt="cartIcon" className={style.navIcon} />
                     </Link>
                     <Link href="/" >
-                        <Image src={Avatar} alt="avatarIcon" />
+                        <Image src={Avatar} alt="avatarIcon" className={style.navIcon} />
                     </Link>
 
-                    <div className="navBtns"></div>
+                    <div className={style.navBtns}>
+                        {
+                            navbarOpen ? <IoMdClose className={style.Icon} onClick={() => setNavbarOpen(!navbarOpen)} /> :
+                                <RiMenu4Line className={style.Icon} onClick={() => setNavbarOpen(!navbarOpen)} />
+                        }
+                    </div>
                 </div>
             </div>
         </nav>
