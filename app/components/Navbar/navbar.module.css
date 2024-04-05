@@ -1,0 +1,43 @@
+.nav {
+    /* display: grid;
+    place-content: center; */
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 4rem;
+    backdrop-filter: blur(20px);
+    box-shadow: -2rem 0 1rem rgb(234, 224, 243);
+}
+
+.navContainer {
+    width: var(--container-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+
+.navContainerRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navContainerLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.menuItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
