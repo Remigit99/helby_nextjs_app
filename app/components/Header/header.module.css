@@ -1,0 +1,79 @@
+
+
+.header {
+    background: url(../../assets/Hero_bg.png);
+    padding-top: 8rem;
+    height: 98vh;
+}
+
+.headerContainer {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    width: 86%;
+    margin: 0 auto;
+padding: 8rem 0 4rem;
+}
+
+.headerTitle h1 {
+    font-size: 3.5rem;
+}
+
+.headerLeft .para  {
+    margin: 3rem 0 2.5rem;
+    width: 78%;
+    color: rgb(73, 73, 73);
+}
+
+.headerContainerRight img {
+    width: 30rem;
+}
+
+.demoBtns {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.demoBtnA {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.demoBtnB {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.heroSpecialist {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: rebeccapurple; */
+    /* width: max-content;
+    height: fit-content; */
+}
+
+.heroAvatar {
+    width: 3rem;
+}
+
+.heroSpecRight p span {
+    font-weight: 500;
+}
+
+
+
+
+/**============= MEDIA QUERY (SMALL DEVICES) ==========**/

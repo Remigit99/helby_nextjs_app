@@ -1,0 +1,18 @@
+
+
+.patners{
+    background-color: black;
+    padding: 2rem 0;
+}
+
+.patnerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 86%;
+}
+
+.patnerIcon{
+    width: 10rem;
+}
