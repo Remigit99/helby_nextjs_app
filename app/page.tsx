@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className={`container ${style.mainContainer}`}>
       <Header/>
-<Patners/>
+      <Patners/>
     </ main >
   );
 }
