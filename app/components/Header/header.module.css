@@ -3,14 +3,10 @@
 .header {
     background: url(../../assets/Hero_bg.png);
     padding-top: 8rem;
-    height: 98vh;
+    /* height: 98vh; */
 }
 
 .headerContainer {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
