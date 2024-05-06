@@ -25,11 +25,19 @@ const Features = () => {
 
                 {
                     featuresData.map(({id,title, desc, img}) =>  <article key={id}>
-                                    <h4>{title}</h4>
+
+                                    <div className={styles.featureCardMain}>
+                                    <h3>{title}</h3>
                                     <p>{desc}</p>
 
                                     <Link href = "/">Learm More</Link>
+                                    </div>
+                                    
+                                    <div className={styles.featureCardBottom}>
                                     <Image src={img} alt="decoration" />
+
+                                    </div>
+                                        
                                     </article>
  )
 

@@ -30,10 +30,49 @@
 }
 
 .featuresMain article{
-    padding: 1.5rem 0 1rem;
+    /* padding: 1.5rem 0 1rem; */
     box-shadow: 0 0 1rem gray;
+    /* position: relative; */
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .featuresMain article p{
     margin: 1.5rem 0 2.5rem;
+}
+
+.featureCardMain{
+    padding: 0.9rem 1rem 0.5rem;
+}
+
+
+/* .featureCardBottom{
+    
+} */
+
+/* .featureCardBottom img{
+    position: absolute;
+    bottom: -10.5rem;
+} */
+
+
+/*==========  TABLET ========*/
+
+@media screen and (max-width: 64rem) {
+    
+   
+    .featuresMain{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/*==========  SMALL DEVICES ========*/
+
+@media screen and (max-width: 34rem) {
+    
+   
+    .featuresMain{
+        grid-template-columns: 1fr;
+    }
 }

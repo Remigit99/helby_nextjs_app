@@ -21,13 +21,13 @@ export const featuresData = [
     },
     {
         id: 3,
-        title: "language customization & data",
+        title: "Language Customization & Data",
         desc: "Start maximzing your company results today and speed up all your workflows processes",
         img: Enterprise3
     },
     {
         id: 4,
-        title: "Database structure and optimization",
+        title: "Database Structure and Optimization",
         desc: "Start maximzing your company results today and speed up all your workflows processes",
         img: Enterprise4
     },
