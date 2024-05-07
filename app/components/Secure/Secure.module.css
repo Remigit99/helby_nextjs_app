@@ -1,0 +1,39 @@
+.secure {
+  padding: 3rem 0;
+}
+
+.secureContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  width: 86%;
+  margin: 0 auto;
+  place-items: center;
+}
+
+.secureContainerLeft p{
+margin: 1.5rem 0 2rem;
+}
+
+
+.secureItems{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.secureItems article h5{
+    margin: 1rem 0 1.2rem;
+    /* background-color: aqua; */
+}
+
+.secureContainerRight img{
+    width: 25rem;
+}
+
+
+
+.Icon{
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: rgba(226, 226, 226, 0.301);
+}
