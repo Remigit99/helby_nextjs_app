@@ -6,7 +6,7 @@ import Patners from "./components/Partners/Patners"
 import Features from "./components/Features/Features"
 import Secure from  "./components/Secure/Secure"
 import Compliant from "./components/Compliant/Compliant"
-
+import Native from "./components/Native/Native"
 
 export default function Home() {
   return (
@@ -16,6 +16,8 @@ export default function Home() {
       <Features/>
       <Secure/>
       <Compliant/>
+      <Native/>
+      
     </ main >
   );
 }
