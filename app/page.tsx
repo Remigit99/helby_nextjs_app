@@ -5,7 +5,7 @@ import Header from "./components/Header/Header"
 import Patners from "./components/Partners/Patners"
 import Features from "./components/Features/Features"
 import Secure from  "./components/Secure/Secure"
-
+import Compliant from "./components/Compliant/Compliant"
 
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
       <Patners/>
       <Features/>
       <Secure/>
+      <Compliant/>
     </ main >
   );
 }
