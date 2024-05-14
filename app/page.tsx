@@ -7,6 +7,7 @@ import Features from "./components/Features/Features"
 import Secure from  "./components/Secure/Secure"
 import Compliant from "./components/Compliant/Compliant"
 import Native from "./components/Native/Native"
+import Testimonial from "./components/Testimonial/Testimonial"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Secure/>
       <Compliant/>
       <Native/>
+      <Testimonial/>
       
     </ main >
   );
