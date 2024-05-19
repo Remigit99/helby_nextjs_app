@@ -8,6 +8,9 @@ import Secure from  "./components/Secure/Secure"
 import Compliant from "./components/Compliant/Compliant"
 import Native from "./components/Native/Native"
 import Testimonial from "./components/Testimonial/Testimonial"
+import MyResources  from "./components/MyResources/MyResources.jsx"
+
+
 
 export default function Home() {
   return (
@@ -19,6 +22,7 @@ export default function Home() {
       <Compliant/>
       <Native/>
       <Testimonial/>
+      <MyResources/>
       
     </ main >
   );

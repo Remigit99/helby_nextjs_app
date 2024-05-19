@@ -1,0 +1,40 @@
+.resourcesContainer{
+    width: 86%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.article{
+    background-color: aliceblue;
+}
+
+.resImg{
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+}
+
+.resMain{
+    padding: 1rem 0.6rem;
+}
+
+.resMain h5{
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    width: fit-content;
+}
+
+.resMain h3{
+    margin: 1rem 0;
+}
+
+.authorDetails{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
