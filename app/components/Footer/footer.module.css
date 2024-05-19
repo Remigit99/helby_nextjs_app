@@ -1,0 +1,41 @@
+.footer{
+    padding: 5rem 0;
+}
+
+.footerContainer{
+width: 86%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footerLogo{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    margin-bottom: 2rem;
+}
+
+.companyContacts{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.socialLinks{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.footerContainerRight{
+    display: flex;
+    gap: 5rem;
+}
+
+.footerContainerRight > div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}

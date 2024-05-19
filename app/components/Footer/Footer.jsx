@@ -7,47 +7,54 @@ import { LuInstagram } from "react-icons/lu";
 import { IoLogoYoutube } from "react-icons/io";
 
 import NavLogo from "../../assets/Logo_nav.svg";
+import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footerContainer">
-        <div className="footerContainerLeft">
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
+        <div className={styles.footerContainerLeft}>
           <Link href="/">
-            <Image src={NavLogo} alt="Helby_Logo" />
+            <Image
+              src={NavLogo}
+              alt="Helby_Logo"
+              className={styles.footerLogo}
+            />
           </Link>
+
+          <div className={styles.companyContacts}>
+            <div className={styles.address}>
+              <h6>Address:</h6>
+              <small>16 Balogun Estate, Lagos Nigeria</small>
+            </div>
+
+            <div className={styles.phone}>
+              <h6>Contact:</h6>
+              <p>+234894588668</p>
+              <a href="mailto:aderemibiodun@gmail.com">
+                aderemibiodun@gmail.com
+              </a>
+            </div>
+
+            <div className={styles.socialLinks}>
+              <a href="http://facebook.com">
+                <FaFacebook />
+              </a>
+
+              <a href="http://twitter.com">
+                <IoLogoTwitter />
+              </a>
+              <a href="http://instagram.com">
+                <LuInstagram />
+              </a>
+              <a href="http://youtube.com">
+                <IoLogoYoutube />
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div className="companyContacts">
-          <div className="address">
-            <h6>Address:</h6>
-            <small>16 Balogun Estate, Lagos Nigeria</small>
-          </div>
-
-          <div className="phone">
-            <h6>Contact:</h6>
-            <p>+234894588668</p>
-            <a href="mailto:aderemibiodun@gmail.com">aderemibiodun@gmail.com</a>
-          </div>
-
-          <div className="socialLinks">
-            <a href="http://facebook.com">
-              <FaFacebook />
-            </a>
-
-            <a href="http://twitter.com">
-              <IoLogoTwitter />
-            </a>
-            <a href="http://instagram.com">
-              <LuInstagram />
-            </a>
-            <a href="http://youtube.com">
-              <IoLogoYoutube />
-            </a>
-          </div>
-        </div>
-
-        <div className="footerContainerRight">
+        <div className={styles.footerContainerRight}>
           <div>
             <li>About Us</li>
             <li> Book a Demo </li>
