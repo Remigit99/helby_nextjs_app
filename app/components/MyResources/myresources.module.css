@@ -9,6 +9,8 @@
 
 .article{
     background-color: aliceblue;
+    border-radius: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .resImg{
@@ -23,7 +25,7 @@
 .resMain h5{
     background-color: antiquewhite;
     border-radius: 1rem;
-    padding: 0.2rem;
+    padding: 0.4rem 0.6rem;
     width: fit-content;
 }
 

@@ -1,0 +1,35 @@
+.cta {
+  background-image: url("../../assets/Section\ 04.png");
+  height: 90vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ctaContainer {
+  width: 86%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.ctaContainer button {
+  font-family: inherit;
+  margin-top: 2rem;
+  padding: 1rem 1.6rem;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 1.5rem;
+  transition: all 350ms ease-in-out;
+  cursor: pointer;
+}
+
+.ctaContainer button:hover {
+  /* opacity: 0.9; */
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+
+}

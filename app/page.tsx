@@ -9,7 +9,7 @@ import Compliant from "./components/Compliant/Compliant"
 import Native from "./components/Native/Native"
 import Testimonial from "./components/Testimonial/Testimonial"
 import MyResources  from "./components/MyResources/MyResources.jsx"
-
+import CTA from "./components/CTA/CTA"
 
 
 export default function Home() {
@@ -23,6 +23,7 @@ export default function Home() {
       <Native/>
       <Testimonial/>
       <MyResources/>
+      <CTA/>
       
     </ main >
   );
